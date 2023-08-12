@@ -11,7 +11,7 @@ const config: DocsThemeConfig = {
   },
   docsRepositoryBase: 'https://github.com/adynblaed/fosai-xyz',
   footer: {
-    text: 'Nextra Docs Template',
+    text: 'FOSAI ▲ XYZ',
   },
 }
 
