@@ -1,6 +1,6 @@
 # FOSAI ▲ XYZ
 
-![image](https://github.com/adynblaed/fosai-xyz/assets/130184094/00cb6023-578c-469b-8918-7fce89bab436)
+![screenshot](https://github.com/adynblaed/fosai-xyz/assets/130184094/914c99bd-8335-401b-92c7-54ff30e74612)
 
 **FOSAI** stands for **F**ree **O**pen-**S**ource **A**rtificial **I**ntelligence. 
 
