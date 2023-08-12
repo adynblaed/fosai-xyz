@@ -1,0 +1,121 @@
+# Getting Started With AI
+
+Getting started with AI can be tough. The good news is that there is a plethora of free open-source software options to choose from. I suggest jumping in by installing one of the inference platforms below and begin your journey in AI by chatting with a text-based LLM. 
+
+For the best results, go through the rest of this site sequentially then revisit each page and section as desired. After you've had a chance to try each type of AI, choose one you want to really dig into and allow that to be your primary focus as you slowly expand into other areas and topics. There are a lot of text-based inference software options to choose from. Try more than one and see which you like the most. When in doubt, start with [oobabooga's text-generation-webui](https://github.com/oobabooga/text-generation-webui) and download/install/run some of [TheBloke's](https://huggingface.co/TheBloke) optimized text-based AI LLMs.
+
+**Recomended Learning Order:**
+
+1. [🤖 Text-based AI LLM](/ai-text-generation-software)
+
+2. [🖼️ Image-based AI Diffusion](/ai-image-diffusion-software)
+
+3. [📽️ Audio Video-based AI Synthesis](/ai-audiovideo-synthesis-software)
+
+## FAQs
+
+### How do I get started with AI?
+
+Unsure where to begin? Do you have no idea what you're doing? Have paralysis by analysis? 
+
+That's okay, we've all been there. This site isn't going anywhere. Take your time, organize yourself, start small, and don't install everything everywhere all at once. 
+
+Instead, ask yourself what sounds like the most fun? Let the answer to that guide you to one of the resources above (or below). 
+
+### **🤖 Text-Based AI**
+
+**Examples**: ChatGPT 4, Chat GPT 3.5, BERT, Falcon, Llama, etc.
+- [A Complete Look at Large Language Models](https://www.youtube.com/watch?v=RIPWuClFi3g&ab_channel=AssemblyAI)
+- Start with [oobabooga's text-generation-webui](https://github.com/oobabooga/text-generation-webui). 
+
+### **🖼️ Image-Based AI**
+
+**Examples**: DALL-E, MidJourney, StableDiffusion, StableDiffusion XL, etc.
+- [Diffusion models explained in 4-difficulty levels](https://www.youtube.com/watch?v=yTAMrHVG1ew&ab_channel=AssemblyAI)
+- Start with [AUTOMATIC1111's stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui).
+
+### **📽️ Audio & Video-Based AI**
+
+**Examples**: StableDiffusion, TemporalKit, WarpFusion, EbSynth, ElevenLabs, Bark, etc.
+- [Combining the Power of StableDiffusion and EbSynth](https://www.youtube.com/watch?v=rlfhv0gRAF4&ab_channel=enigmatic_e)
+- Start with [Stable Diffusion](https://github.com/AUTOMATIC1111/stable-diffusion-webui) and then transition to [ControlNet](https://github.com/lllyasviel/ControlNet) & [TemporalKit](https://github.com/CiaraStrawberry/TemporalKit) or [WarpFusion](https://github.com/Sxela/WarpFusion).
+
+---
+
+### What is [text-generation-webui?](https://github.com/oobabooga/text-generation-webui)
+
+**Type:** 🤖 Text-Based AI
+
+[How-To-Install-text-generation-webui](https://www.youtube.com/watch?v=lb_lC4XFedU) (oobabooga)
+
+Oobabooga's text-generation-webui is a free and open source web client someone (oobabooga) made to interface with [HuggingFace](https://huggingface.co/) LLMs (large language models). As far as I understand, this is the current standard for many AI tinkerers and those who wish to run models locally. This client allows you to easily download, chat, and configure with text-based models that behave like Chat-GPT, however, not all models on HuggingFace are at the same level of Chat-GPT out-of-the-box. Many require 'fine-tuning' or 'training' to produce consistent, coherent results. The benefit using HuggingFace (instead of Chat-GPT) is that you have much more options to choose from regarding your AI model, including the option to choose a censored or uncensored version of a model, untrained or pre-trained, etc. Oobabooga is an interface that let's you do all this (theoretically), but can have a bit of a learning curve if you don't know anything about AI/LLMs. 
+
+---
+
+### What is [gpt4all?](https://github.com/nomic-ai/gpt4all)
+
+**Type:** 🤖 Text-Based AI
+
+[How-To-Install-gpt4all](https://www.youtube.com/watch?v=rOa0wy2TDYE)
+
+gpt4all is the closest thing you can currently download to have a Chat-GPT style interface that is compatible with some of the latest open-source LLM models available to the community. Some models can be downloaded in quantized formats, unquantized formats, and base formats (which typically run GPU only), but there are new model formats that are emerging (GGML), which enable GPU + CPU compute. This GGML format seems to be the growing standard for consumer-grade hardware. Some prefer the user experience of gpt4all over oobabooga, and some feel the exact opposite. For me - I prefer the options oobabooga provides - so I use that as my 'daily driver' while gpt4all is a backup client I run for other tests.
+
+---
+
+### What is [koboldcpp?](https://github.com/LostRuins/koboldcpp)
+
+**Type:** 🤖 Text-Based AI
+
+[How-To-Install-koboldcpp](https://github.com/LostRuins/koboldcpp)
+
+Koboldcpp, like oobabooga and gpt4all is another web-based interface you can run to chat with LLMs locally. It enables GGML inference, which can be hard to get running on oobabooga depending on the version of your client and updates from the developer. Koboldcpp, however, is part of a totally different platform and team of developers who typically focus on the roleplaying aspect of generative AI and LLMs. Koboldcpp feels more like NovelAI than anything I've ran locally, and has similar functionality and vibes as AI Dungeon. In fact, you can download some of the same models and settings that they use to emulate something very similar (but 100% local, assuming you have capable hardware). 
+
+---
+
+### What is [TavernAI?](https://github.com/TavernAI/TavernAI)
+
+**Type:** 🤖 Text-Based AI
+
+[How-To-Install-TavernAI](https://github.com/TavernAI/TavernAI/wiki/How-to-install)
+
+TavernAI is a customized web-client that seems as functional as gpt4all in most regards. You can use TavernAI to connect with Kobold's API - as well as insert your own Chat-GPT API key to talk with OpenAI's GPT-3 (and GPT-4 if you have API access).
+
+---
+
+### What is [Stable Diffusion?](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+
+**Type:** 🖼️ Image-Based AI
+
+[How-To-Install-StableDiffusion](https://www.youtube.com/watch?v=6MeJKnbv1ts&amp;t=34s) (Automatic1111)
+
+Stable Diffusion is a groundbreaking and popular AI model that enables text to image generation. When someone thinks of "Stable Diffusion" people tend to picture [Automatic1111's UI/UX](https://github.com/AUTOMATIC1111/stable-diffusion-webui), which is the same interface oobabooga is inspired by. This UI/UX has become the defacto standard for almost all Stable Diffusion workflows. Fun factoid - it is widely believed MidJourney is a highly tuned version of a Stable Diffusion model, but one who's weights, LoRAs, and configurations made closed-source after training and alignment. 
+
+---
+
+### What is [ControlNet?](https://github.com/lllyasviel/ControlNet)
+
+**Type:** 🖼️ Image-Based AI
+
+[How-To-Install-ControlNet](https://www.youtube.com/watch?v=dLM2Gz7GR44&amp;list=PLaOY18jrLDeaVKJGjdCZxS-nnO6Uy0KYu&amp;index=36)
+
+ControlNet is a way you can manually control models of Stable Diffusion, allowing you to have complete freedom over your generative AI workflow. The best example of what this is (and what it can do) can be seen in this [video](https://www.youtube.com/watch?v=dLM2Gz7GR44&amp;list=PLaOY18jrLDeaVKJGjdCZxS-nnO6Uy0KYu&amp;index=36). Notice how it combines an array of tools you can use as pre-processors for your prompts, enhancing the composition of your image by giving you options to bring out any detail you wish to manifest. 
+
+---
+
+###  What is [TemporalKit?](https://github.com/CiaraStrawberry/TemporalKit)
+
+**Type:** 📽️ Video-Based AI
+
+[How-To-Install-TemporalKit](https://www.youtube.com/watch?v=rlfhv0gRAF4)
+
+This is another Stable Diffusion extension that allows you to create custom videos using generative AI. In short, it takes an input video and chops them into dozens (or hundreds) of frames that can then be batch edited with Stable Diffusion, amassing new key frames and sequences which are stitched back together with [EbSynth](https://ebsynth.com/) using your new images, resulting a stylized video that was generated and edited based on your Stable Diffusion prompt/workflow. 
+
+---
+
+###  What is [WarpFusion?](https://github.com/Sxela/WarpFusion)
+
+**Type:** 📽️ Video-Based AI
+
+[How-To-Install-WarpFusion](https://www.youtube.com/watch?v=tUHCtQaBWCw&ab_channel=MDMZ)
+
+WarpFusion is a TemporalKit alternative/additive that produces different results than TemporalKit. 

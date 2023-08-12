@@ -1,0 +1,22 @@
+{
+  "index": "🪐 FOSAI Home",
+  "ai-text-generation-software": "🤖 x Text-based AI LLM",
+  "ai-image-diffusion-software": "🖼️ y Image-based AI Diffusion",
+  "ai-audiovideo-synthesis-software": "📽️ z AV-based AI Synthesis",
+  "learn": "💫 Learn",
+  "discover": "🌚 Discover",
+  "explore": "🚀 Explore",
+  "enroll": "🎓 Enroll",
+  "apply": "☄️ Apply",
+  "play": "🕹️ Play",
+  "about": {
+    "title": "▼ About",
+    "type": "page"
+  },
+  "contact": {
+    "title": "Contact ↗",
+    "type": "page",
+    "href": "mailto:adyn@divineblade.studio",
+    "newWindow": true
+  }
+}

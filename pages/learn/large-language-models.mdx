@@ -1,0 +1,149 @@
+# Large Language Models
+
+**Download Models**
+
+- [TheBloke](https://huggingface.co/TheBloke)
+
+**LLM Leaderboards**
+- [HuggingFace Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
+- [LMSYS Chatbot Arena](https://chat.lmsys.org/?leaderboard)
+
+**LLM Search Tools**
+- [LLM Explorer](https://llm.extractum.io/)
+- [Open LLMs](https://github.com/eugeneyan/open-llms)
+
+---
+
+## LLM Inference Software 
+
+## 8-bit System Requirements
+
+| Model     | VRAM Used | Minimum Total VRAM | Card Examples     | RAM/Swap to Load* |
+|-----------|-----------|--------------------|-------------------|-------------------|
+| 7B  | 9.2GB     | 10GB               | 3060 12GB, 3080 10GB  | 24 GB            |
+| 13B | 16.3GB    | 20GB               | 3090, 3090 Ti, 4090   | 32 GB            |
+| 30B | 36GB      | 40GB               | A6000 48GB, A100 40GB | 64 GB            |
+| 65B | 74GB      | 80GB               | A100 80GB         | 128 GB           |
+
+## 4-bit System Requirements
+
+| Model     | Minimum Total VRAM | Card Examples                 | RAM/Swap to Load* |
+|-----------|--------------------|--------------------------------|-------------------|
+| 7B  | 6GB                | GTX 1660, 2060, AMD 5700 XT, RTX 3050, 3060 | 6 GB  |
+| 13B | 10GB               | AMD 6900 XT, RTX 2060 12GB, 3060 12GB, 3080, A2000 | 12 GB |
+| 30B | 20GB               | RTX 3080 20GB, A4500, A5000, 3090, 4090, 6000, Tesla V100 | 32 GB |
+| 65B | 40GB               | A100 40GB, 2x3090, 2x4090, A40, RTX A6000, 8000 | 64 GB |
+
+*System RAM (not VRAM), is utilized to initially load a model. You can use swap space if you do not have enough RAM to support your LLM.
+
+### [text-generation-webui](https://github.com/oobabooga/text-generation-webui)
+text-generation-webui - a big community favorite gradio web UI by oobabooga designed for running almost any free open-source and large language models downloaded off of [HuggingFace](https://huggingface.co/TheBloke) which can be (but not limited to) models like LLaMA, llama.cpp, GPT-J, Pythia, OPT, and many others. Its goal is to become the [AUTOMATIC1111/stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) of text generation. It is highly compatible with many formats.
+
+### [Exllama](https://github.com/turboderp/exllama)
+A standalone Python/C++/CUDA implementation of Llama for use with 4-bit GPTQ weights, designed to be fast and memory-efficient on modern GPUs.
+
+### [gpt4all](https://github.com/nomic-ai/gpt4all)
+Open-source assistant-style large language models that run locally on your CPU. GPT4All is an ecosystem to train and deploy powerful and customized large language models that run locally on consumer-grade processors.
+
+### [TavernAI](https://github.com/TavernAI/TavernAI)
+The original branch of software SillyTavern was forked from. This chat interface offers very similar functionalities but has less cross-client compatibilities with other chat and API interfaces (compared to SillyTavern). 
+
+### [SillyTavern](https://github.com/SillyTavern/SillyTavern)
+Developer-friendly, Multi-API (KoboldAI/CPP, Horde, NovelAI, Ooba, OpenAI+proxies, Poe, WindowAI(Claude!)), Horde SD, System TTS, WorldInfo (lorebooks), customizable UI, auto-translate, and more prompt options than you'd ever want or need. Optional Extras server for more SD/TTS options + ChromaDB/Summarize. Based on a fork of TavernAI 1.2.8
+
+### [Koboldcpp](https://github.com/LostRuins/koboldcpp)
+A self contained distributable from Concedo that exposes llama.cpp function bindings, allowing it to be used via a simulated Kobold API endpoint. What does it mean? You get llama.cpp with a fancy UI, persistent stories, editing tools, save formats, memory, world info, author's note, characters, scenarios and everything Kobold and Kobold Lite have to offer. In a tiny package around 20 MB in size, excluding model weights.
+
+### [KoboldAI-Client](https://github.com/KoboldAI/KoboldAI-Client)
+This is a browser-based front-end for AI-assisted writing with multiple local & remote AI models. It offers the standard array of tools, including Memory, Author's Note, World Info, Save & Load, adjustable AI settings, formatting options, and the ability to import existing AI Dungeon adventures. You can also turn on Adventure mode and play the game like AI Dungeon Unleashed.
+
+### [h2oGPT](https://github.com/h2oai/h2ogpt)
+h2oGPT is a large language model (LLM) fine-tuning framework and chatbot UI with document(s) question-answer capabilities. Documents help to ground LLMs against hallucinations by providing them context relevant to the instruction. h2oGPT is fully permissive Apache V2 open-source project for 100% private and secure use of LLMs and document embeddings for document question-answer.
+
+---
+
+## **Models**
+
+### The Bloke
+The Bloke is a developer who frequently releases quantized (GPTQ) and optimized (GGML) open-source, user-friendly versions of AI Large Language Models (LLMs). 
+
+These conversions of popular models can be configured and installed on personal (or professional) hardware, bringing bleeding-edge AI to the comfort of your home. 
+
+Support [TheBloke](https://huggingface.co/TheBloke) here.
+
+- [https://ko-fi.com/TheBlokeAI](https://ko-fi.com/TheBlokeAI)
+
+---
+
+#### 70B
+- [Llama-2-70B-chat-GPTQ](https://huggingface.co/TheBloke/Llama-2-70B-chat-GPTQ)
+- [Llama-2-70B-Chat-GGML](https://huggingface.co/TheBloke/Llama-2-70B-Chat-GGML)
+
+- [Llama-2-70B-GPTQ](https://huggingface.co/TheBloke/Llama-2-70B-GPTQ)
+- [Llama-2-70B-GGML](https://huggingface.co/TheBloke/Llama-2-70B-GGML)
+
+- [llama-2-70b-Guanaco-QLoRA-GPTQ](https://huggingface.co/TheBloke/llama-2-70b-Guanaco-QLoRA-GPTQ)
+
+---
+
+#### 30B
+- [30B-Epsilon-GPTQ](https://huggingface.co/TheBloke/30B-Epsilon-GPTQ)
+
+---
+
+#### 13B
+- [Llama-2-13B-chat-GPTQ](https://huggingface.co/TheBloke/Llama-2-13B-chat-GPTQ)
+- [Llama-2-13B-chat-GGML](https://huggingface.co/TheBloke/Llama-2-13B-chat-GGML)
+
+- [Llama-2-13B-GPTQ](https://huggingface.co/TheBloke/Llama-2-13B-GPTQ)
+- [Llama-2-13B-GGML](https://huggingface.co/TheBloke/Llama-2-13B-GGML)
+
+- [llama-2-13B-German-Assistant-v2-GPTQ](https://huggingface.co/TheBloke/llama-2-13B-German-Assistant-v2-GPTQ)
+- [llama-2-13B-German-Assistant-v2-GGML](https://huggingface.co/TheBloke/llama-2-13B-German-Assistant-v2-GGML)
+
+- [13B-Ouroboros-GGML](https://huggingface.co/TheBloke/13B-Ouroboros-GGML)
+- [13B-Ouroboros-GPTQ](https://huggingface.co/TheBloke/13B-Ouroboros-GPTQ)
+
+- [13B-BlueMethod-GGML](https://huggingface.co/TheBloke/13B-BlueMethod-GGML)
+- [13B-BlueMethod-GPTQ](https://huggingface.co/TheBloke/13B-BlueMethod-GPTQ)
+
+- [llama-2-13B-Guanaco-QLoRA-GGML](https://huggingface.co/TheBloke/llama-2-13B-Guanaco-QLoRA-GGML)
+- [llama-2-13B-Guanaco-QLoRA-GPTQ](https://huggingface.co/TheBloke/llama-2-13B-Guanaco-QLoRA-GPTQ)
+
+- [Dolphin-Llama-13B-GGML](https://huggingface.co/TheBloke/Dolphin-Llama-13B-GGML)
+- [Dolphin-Llama-13B-GPTQ](https://huggingface.co/TheBloke/Dolphin-Llama-13B-GPTQ)
+
+- [MythoLogic-13B-GGML](https://huggingface.co/TheBloke/MythoLogic-13B-GGML)
+- [MythoBoros-13B-GPTQ](https://huggingface.co/TheBloke/MythoBoros-13B-GPTQ)
+
+- [WizardLM-13B-V1.2-GPTQ](https://huggingface.co/TheBloke/WizardLM-13B-V1.2-GPTQ)
+- [WizardLM-13B-V1.2-GGML](https://huggingface.co/TheBloke/WizardLM-13B-V1.2-GGML)
+
+- [OpenAssistant-Llama2-13B-Orca-8K-3319-GGML](https://huggingface.co/TheBloke/OpenAssistant-Llama2-13B-Orca-8K-3319-GGML)
+
+---
+
+#### 7B
+- [Llama-2-7B-GPTQ](https://huggingface.co/TheBloke/Llama-2-7B-GPTQ)
+- [Llama-2-7B-GGML](https://huggingface.co/TheBloke/Llama-2-7B-GGML)
+
+- [Llama-2-7b-Chat-GPTQ](https://huggingface.co/TheBloke/Llama-2-7b-Chat-GPTQ)
+- [LLongMA-2-7B-GPTQ](https://huggingface.co/TheBloke/LLongMA-2-7B-GPTQ)
+
+- [llama-2-7B-Guanaco-QLoRA-GPTQ](https://huggingface.co/TheBloke/llama-2-7B-Guanaco-QLoRA-GPTQ)
+- [llama-2-7B-Guanaco-QLoRA-GGML](https://huggingface.co/TheBloke/llama-2-7B-Guanaco-QLoRA-GGML)
+
+- [llama2_7b_chat_uncensored-GPTQ](https://huggingface.co/TheBloke/llama2_7b_chat_uncensored-GPTQ)
+- [llama2_7b_chat_uncensored-GGML](https://huggingface.co/TheBloke/llama2_7b_chat_uncensored-GGML)
+
+---
+
+## **More Models**
+- [Any of KoboldAI's Models](https://huggingface.co/KoboldAI)
+
+- [Luna-AI-Llama2-Uncensored-GPTQ](https://huggingface.co/TheBloke/Luna-AI-Llama2-Uncensored-GPTQ)
+
+- [Nous-Hermes-Llama2-GGML](https://huggingface.co/TheBloke/Nous-Hermes-Llama2-GGML)
+- [Nous-Hermes-Llama2-GPTQ](https://huggingface.co/TheBloke/Nous-Hermes-Llama2-GPTQ)
+
+- [FreeWilly2-GPTQ](https://huggingface.co/TheBloke/FreeWilly2-GPTQ)

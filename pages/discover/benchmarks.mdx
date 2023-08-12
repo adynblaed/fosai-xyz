@@ -1,0 +1,35 @@
+# Benchmarks
+
+It's hard to pinpoint reliable and consistent benchmarks, but hopefully this page gives you an idea on some of the current hardware requirements for running AI in its many forms. 
+
+## 4-bit System Requirements
+
+| Model     | Minimum Total VRAM | Card Examples                 | RAM/Swap to Load* |
+|-----------|--------------------|--------------------------------|-------------------|
+| 7B  | 6GB                | GTX 1660, 2060, AMD 5700 XT, RTX 3050, 3060 | 6 GB  |
+| 13B | 10GB               | AMD 6900 XT, RTX 2060 12GB, 3060 12GB, 3080, A2000 | 12 GB |
+| 30B | 20GB               | RTX 3080 20GB, A4500, A5000, 3090, 4090, 6000, Tesla V100 | 32 GB |
+| 65B | 40GB               | A100 40GB, 2x3090, 2x4090, A40, RTX A6000, 8000 | 64 GB |
+
+## 8-bit System Requirements
+
+| Model     | VRAM Used | Minimum Total VRAM | Card Examples     | RAM/Swap to Load* |
+|-----------|-----------|--------------------|-------------------|-------------------|
+| 7B  | 9.2GB     | 10GB               | 3060 12GB, 3080 10GB  | 24 GB            |
+| 13B | 16.3GB    | 20GB               | 3090, 3090 Ti, 4090   | 32 GB            |
+| 30B | 36GB      | 40GB               | A6000 48GB, A100 40GB | 64 GB            |
+| 65B | 74GB      | 80GB               | A100 80GB         | 128 GB           |
+
+## LLM Leaderboards
+- [HF Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard)
+- [LMSYS Chatbot Arena](https://chat.lmsys.org/?leaderboard)
+
+## LLM Search Tools
+- [LLM Explorer](https://llm.extractum.io/)
+- [Open LLMs](https://github.com/eugeneyan/open-llms)
+
+## LLM Eval & Benchmark Resources
+- [Holistic Evaluation of Language Models (HELM)](https://crfm.stanford.edu/helm/latest/?groups=1)
+- [TextSynth](https://bellard.org/ts_server/)
+- [The Curious Case of LLM Evaluations](https://nlpurr.github.io/posts/case-of-llm-evals.html)
+- [Mosaic Benchmarks](https://www.mosaicml.com/blog/mpt-7b)
