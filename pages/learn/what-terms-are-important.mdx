@@ -1,6 +1,53 @@
-# What Terms Are Important?
+# Terms to Know
 
-# Key Terms in Machine Learning and Deep Learning
+## Quick Term Sheet
+
+### [Alignment](https://en.wikipedia.org/wiki/AI_alignment)
+
+In the field of artificial intelligence (AI), AI alignment research aims to steer AI systems towards humans' intended goals, preferences, or ethical principles. An AI system is considered aligned if it advances the intended objectives. A misaligned AI system pursues some objectives, but not the intended ones.
+
+### [Model](https://www.databricks.com/glossary/machine-learning-models#:~:text=A%20machine%20learning%20model%20is,sentences%20or%20combinations%20of%20words.)
+
+A machine learning model is a program that can find patterns or make decisions from a previously unseen dataset. For example, in natural language processing, machine learning models can parse and correctly recognize the intent behind previously unheard sentences or combinations of words.
+
+### [TheBloke](https://huggingface.co/TheBloke)
+
+A popular open-source AI developer who releases various and model conversions and quantizations, in GPTQ, GGUF, and other formats that are consumer friendly and can run on almost any gaming graphics card. 
+
+### [Llama](https://ai.meta.com/llama/)
+
+A popular open-source model family released by [MetaAI](https://ai.meta.com/llama/). This is the origin/foundation model for many trending derivatives trained on Llama architecture and base model. 
+
+### [Falcon](https://huggingface.co/blog/falcon-180b)
+
+A popular open-source model family released by [TII](https://falconllm.tii.ae/). This is another trending open-source origin/foundation model that many default to when they don't want to use Llama.
+
+### [llama.cpp](https://huggingface.co/blog/falcon-180b)
+
+A popular open-source model inference platform created by [ggerganov](https://github.com/ggerganov/llama.cpp). Llama.cpp is the native platform for all `GGUF` models and is highly performant on Apple M1/M2 devices. 
+
+### [GGUF](https://github.com/philpax/ggml/blob/gguf-spec/docs/gguf.md)
+
+GGUF is a file format for storing models for inference with GGML and executors based on GGML. GGUF is a binary format that is designed for fast loading and saving of models, and for ease of reading. Models are traditionally developed using PyTorch or another framework, and then converted to GGUF for use in GGML.
+
+### [GPTQ](https://arxiv.org/abs/2210.17323)
+
+GPTQ is a post-training quantziation method to compress LLMs, like GPT. GPTQ compresses GPT models by reducing the number of bits needed to store each weight in the model, from 32 bits down to just 3-4 bits
+Quantization
+
+### [Fine-Tuning](https://en.wikipedia.org/wiki/Fine-tuning_(deep_learning))
+
+Fine-tuning is a way of applying or utilizing transfer learning. Specifically, fine-tuning is a process that takes a model that has already been trained for one given task and then tunes or tweaks the model to make it perform a second similar task, typically one that is more specific built around a use case or domain set of knowledge.
+
+### [Reinforced Learning from Human Feedback](https://en.wikipedia.org/wiki/Reinforcement_learning_from_human_feedback) [(RLHF)](https://huggingface.co/blog/rlhf)
+
+In machine learning, reinforcement learning from human feedback (RLHF) or reinforcement learning from human preferences is a technique that trains a "reward model" directly from human feedback and uses the model as a reward function to optimize an agent's policy using reinforcement learning (RL).
+
+### [Retrieval Augmented Generation](https://www.pinecone.io/learn/retrieval-augmented-generation/) [(RAG)](https://research.ibm.com/blog/retrieval-augmented-generation-RAG)
+
+Retrieval Augmented Generation means fetching up-to-date or context-specific data from an external database and making it available to an LLM when asking it to generate a response, solving this problem. You can store proprietary business data or information about the world and have your application fetch it for the LLM at generation time, reducing the likelihood of hallucinations. The result is a noticeable boost in the performance and accuracy of your GenAI application.
+
+## Learn More
 
 ### 1. Activation Function
 Activation functions decide whether a neuron should be activated or not. Examples include sigmoid, ReLU (Rectified Linear Units), and tanh (Hyperbolic tangent).
